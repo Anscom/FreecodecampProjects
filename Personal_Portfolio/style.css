@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.25rem;
+    background-color: #FFF6E8;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+nav {
+    position: fixed;
+    display: flex;
+    top: 0;
+    left: 0;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    background-color: #FFF6E8;
+}
+
+nav h1 {
+    font-size: 1.75em;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav li {
+    padding: 10px;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+nav li:hover {
+    background-color: black;
+}
+
+#welcome-section {
+    display: flex;
+    flex-direction: column;
+    background-color: #A89983;
+    margin-top: 120px;
+    justify-content: center;
+    height: 100vh;
+    font-size: 1.5em;
+    align-items: center;
+}
+
+#welcome-section h1 {
+    color: white;
+    font-size: 2em;
+}
+
+#welcome-section p {
+    color: yellow;
+}
+
+#welcome-section h1:hover {
+    transform: scale(1.5);
+}
+
+#projects {
+    background-color: #ADADAD;
+    margin-top: -23px;
+    padding: 15px;
+}
+
+#projects h1 {
+    margin-left: 5px;
+    font-size: 2em;
+}
+
+.project_flex ul{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.project_flex li {
+    display: flex;
+    background-color: #F2F2F2;
+    margin: 5px;
+    padding: 1px;
+}
+
+.project_flex li:hover {
+    background-color: black;
+}
+
+.project_flex a {
+    text-align: center;
+}
+
+.project_flex a:hover {
+    color: white;
+}
+
+#contact {
+    font-size: 1.25em;
+    padding: 15px;
+    background-color: #F2F2F2;
+    text-align: center;
+}
+
+#contact img {
+    max-width: 100px;
+    max-height: 80px;
+}
+
+#contact ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    width: 800px;
+    margin: 0 auto;
+}
+
+#contact li {
+    padding: 5px;
+    width: 200px;
+    margin: 5px;
+    display: flex;
+}
+
+
+#contact a:hover,
+#contact a:active {
+    background-color: black;
+}
+
+@media (max-width: 961px) {
+    #projects h1 {
+        text-align: center;
+    }
+
+    #welcome-section {
+        text-align: center;
+    }
+}
+
+@media (max-width: 813px) {
+    #contact ul {
+        width: 500px;
+    }
+
+    .project_flex ul{
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        align-items: center;
+    }
+
+    .project_flex li {
+       width: 80%; 
+    }
+}
+
+@media (max-width: 519px) {
+    #navbar {
+        flex-direction: column;
+    }
+
+    #navbar ul {
+        margin-right: 55px;
+    }
+
+    #contact ul{
+        width: 300px;
+        flex-direction: column;
+        margin: 0 auto;
+        align-items: center;
+    }
+}
+
+/* 
+<a href="https://ibb.co/9ZwWY2d"><img src="https://i.ibb.co/bbHXdLG/documentation.png" alt="documentation" border="0"></a>
+<a href="https://imgbb.com/"><img src="https://i.ibb.co/RQ67hrd/facebook-600.png" alt="facebook-600" border="0"></a>
+<a href="https://imgbb.com/"><img src="https://i.ibb.co/xm2vZ29/github.png" alt="github" border="0"></a>
+<a href="https://imgbb.com/"><img src="https://i.ibb.co/9Gj0dyN/instagram.png" alt="instagram" border="0"></a>
+<a href="https://ibb.co/TkYHhwT"><img src="https://i.ibb.co/3740hTs/productlanding.png" alt="productlanding" border="0"></a>
+<a href="https://ibb.co/X5ZsFyH"><img src="https://i.ibb.co/myCqhvp/surveyform.png" alt="surveyform" border="0"></a>
+<a href="https://ibb.co/gy3Xgns"><img src="https://i.ibb.co/p2xsXmC/tribute.png" alt="tribute" border="0"></a>
+*/
